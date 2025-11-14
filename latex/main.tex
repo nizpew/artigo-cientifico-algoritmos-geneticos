@@ -1,0 +1,152 @@
+\documentclass[
+	article,
+	11pt,
+	oneside,
+	a4paper,
+	english,
+	brazil,
+	sumario=tradicional
+]{abntex2}
+
+% Pacotes fundamentais
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{indentfirst}
+\usepackage{nomencl}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{microtype}
+\usepackage{lipsum}
+\usepackage[brazilian,hyperpageref]{backref}
+\usepackage[alf]{abntex2cite}
+\usepackage{url}
+
+% Configurações backref
+\renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
+\renewcommand{\backref}{}
+\renewcommand*{\backrefalt}[4]{%
+  \ifcase #1 %
+    Nenhuma citação no texto.%
+  \or
+    Citado na página #2.%
+  \else
+    Citado #1 vezes nas páginas #2.%
+  \fi%
+}
+
+% Dados do artigo
+\titulo{Algoritmos Genéticos e suas Implicações Epistemológicas: \\
+Uma Análise Crítica da Tensão entre Design Inteligente, Processos Estocásticos, Filosofia e Jogos Eletrônicos}
+\autor{Sávio Arbuês Abrahão Nery}
+\local{Brasil}
+\data{14-11-2025}
+
+% Aparência PDF
+\definecolor{blue}{RGB}{41,5,195}
+\makeatletter
+\hypersetup{
+	pdftitle={\@title},
+	pdfauthor={\@author},
+	pdfsubject={Artigo científico ABNT},
+	colorlinks=true,
+	linkcolor=blue,
+	citecolor=blue,
+	urlcolor=blue
+}
+\makeatother
+
+% Margens
+\setlrmarginsandblock{3cm}{3cm}{*}
+\setulmarginsandblock{3cm}{3cm}{*}
+\checkandfixthelayout
+
+% Espaçamento
+\setlength{\parindent}{1.3cm}
+\setlength{\parskip}{0.2cm}
+\SingleSpacing
+
+\begin{document}
+\frenchspacing
+
+% Capa
+\maketitle
+
+\begin{center}
+Curso: Modelagem Matemática Aplicada à Otimização na Análise de Dados\\
+Disciplina: Otimização Aplicada à Ciência de Dados
+\end{center}
+
+% Resumo
+\begin{resumoumacoluna}
+Este trabalho analisa criticamente algoritmos genéticos (AG) sob perspectivas epistemológicas, filosóficas e aplicacionais, explorando a tensão entre design inteligente, processos estocásticos, questões teológicas e aplicações em jogos eletrônicos, como Trackmania. A pesquisa combina revisão bibliográfica de literatura peer-reviewed e fontes acadêmicas com análise crítica de temas filosófico-teológicos e computacionais. Discute-se a geração e preservação de informação, o paradoxo do design, a complexidade irredutível, a eficiência estocástica e a aplicabilidade dos AG em simulações de inteligência artificial em jogos, incluindo avaliação de desempenho de agentes autônomos.
+
+\vspace{\onelineskip}
+\noindent
+\textbf{Palavras-chave}: algoritmos genéticos. design inteligente. processos estocásticos. teologia. inteligência artificial em jogos.
+\end{resumoumacoluna}
+
+\textual
+
+\section{Introdução}
+Os algoritmos genéticos (AG) são métodos de otimização inspirados na evolução biológica, aplicando operadores como seleção, mutação e crossover em populações de soluções candidatas. Embora eficazes, surgem questões epistemológicas significativas: dependem de programação inteligente para definir funções fitness, parâmetros e operadores, mas ao mesmo tempo se apoiam em processos estocásticos para gerar soluções.
+
+Além das implicações computacionais, os AG fornecem analogias interessantes para debates filosófico-teológicos sobre a existência de Deus, ao simularem processos evolutivos e estocásticos que podem ser interpretados como “coevolução” entre inteligência humana e processos naturais \cite{gregersen2020,anonimo2021c}. Paralelamente, os AG têm sido aplicados em jogos eletrônicos, como Trackmania, evoluindo comportamentos de agentes autônomos de forma adaptativa \cite{anonimo2021a,anonimo2021b,uberlandia2020}.
+
+\section{Fundamentação Teórica}
+
+\subsection{Algoritmos Genéticos}
+Holland (1975) e Mitchell (1996) descrevem AG como sistemas computacionais que simulam a seleção natural. Eles são aplicados em otimização de problemas complexos onde métodos determinísticos falham ou são ineficientes, mostrando eficiência mesmo quando incorporam aleatoriedade.
+
+\subsection{Design Inteligente e Complexidade}
+Autores como Behe (1996) e Dembski (1998) argumentam que sistemas complexos indicam propósito. Em AG, o paradoxo do design emerge: os algoritmos requerem design humano, mas produzem resultados que parecem evoluir de processos estocásticos \cite{behe1996,dembski1998}.
+
+\subsection{Perspectiva Filosófico-Teológica}
+A analogia entre AG e processos naturais permite reflexões sobre intervenção divina e autonomia da criação. Teologicamente, a visão de Niels Henrik Gregersen sugere que Deus coevolui com processos naturais, permitindo que sistemas complexos surjam de regras simples \cite{gregersen2020}. Estatisticamente, a ausência de evidências empíricas diretas sobre causa divina mantém espaço para coexistência entre fé e ciência \cite{anonimo2021c}.
+
+\paragraph{Transição para aplicações em jogos:} A noção de coevolução presente na criação natural pode ser observada de forma análoga em ambientes de simulação, como jogos, onde agentes autônomos evoluem estratégias complexas a partir de regras simples e mutações controladas.
+
+\subsection{Aplicações em Jogos Eletrônicos}
+AG são aplicados para evoluir agentes em jogos, como Trackmania. O algoritmo NEAT (NeuroEvolution of Augmenting Topologies) evolui redes neurais que dirigem carros autonomamente, cruzando “genomas” e aplicando mutações para melhorar performance em gerações sucessivas \cite{anonimo2021a,anonimo2021b,uberlandia2020}.  
+Esses algoritmos permitem que os agentes aprendam trajetórias mais eficientes, otimizem curvas e adaptem seu comportamento em tempo real, demonstrando exploração de estratégias e aumento gradual de performance. Técnicas semelhantes têm sido usadas em outros jogos de simulação e aprendizagem adaptativa \cite{ufu2020}.
+
+\section{Análise Crítica e Discussão}
+
+\subsection{Paradoxo do Design e Aleatoriedade}
+Embora AG necessitem de programação inteligente, isso não invalida a eficácia de processos estocásticos. A função fitness define o quadro de possibilidades, enquanto a aleatoriedade permite exploração criativa. Essa tensão é análoga à discussão sobre a existência de Deus: design inicial pode coexistir com processos independentes, sem contradição epistemológica \cite{gregersen2020,anonimo2021c}.
+
+\subsection{Informação e Complexidade}
+AG modificam e preservam informação de soluções candidatas, criando novas soluções. Do ponto de vista teológico-filosófico, esse processo lembra uma “coevolução” da criação natural guiada por regras, mas sem evidência de intervenção direta \cite{gregersen2020}.
+
+\subsection{Eficiência Computacional em Jogos}
+Em Trackmania, NEAT demonstra que AG podem gerar inteligência artificial adaptativa eficiente. A interação entre seleção e variabilidade estocástica gera soluções rápidas, robustas e inovadoras, reforçando a aplicabilidade prática de AG \cite{anonimo2021a,anonimo2021b,uberlandia2020}. Avaliações de desempenho em simulações indicam melhora consistente na capacidade dos agentes de completar pistas e otimizar trajetórias.
+
+\section{Considerações Finais}
+O estudo dos algoritmos genéticos evidencia múltiplas dimensões de análise:
+
+\begin{itemize}
+    \item Epistemológica: AG combinam design humano com exploração aleatória, mostrando eficácia estocástica.
+    \item Filosófico-Teológica: AG podem ser interpretados como analogia à criação dinâmica e coevolutiva, mas a existência de Deus permanece fora do escopo empírico.
+    \item Aplicacional em jogos: AG permitem evoluir agentes em ambientes complexos, exemplificados por Trackmania e algoritmos NEAT, onde estratégias adaptativas emergem de regras simples.
+\end{itemize}
+
+Essas observações demonstram que design, acaso e complexidade podem coexistir, fornecendo insights sobre ciência, filosofia e inteligência artificial aplicada.
+
+\postextual
+
+% Resumo em inglês
+\renewcommand{\resumoname}{Abstract}
+\begin{resumoumacoluna}
+\begin{otherlanguage*}{english}
+This paper critically analyzes genetic algorithms (GAs) from epistemological, philosophical-theological, and gaming perspectives, exploring the tension between intelligent design, stochastic processes, and applications in electronic games such as Trackmania. Bibliographic review and academic sources are combined with critical analysis of AG applications and analogies to creation. The generation and preservation of information, the design paradox, irreducible complexity, stochastic efficiency, and AI applications are discussed. The study demonstrates that human-guided design and randomness coexist to produce innovative solutions in both computational and simulated natural systems, including adaptive agent performance in simulated environments.
+
+\vspace{\onelineskip}
+\noindent
+\textbf{Key-words}: genetic algorithms. intelligent design. stochastic processes. theology. artificial intelligence in games.
+\end{otherlanguage*}
+\end{resumoumacoluna}
+
+% Referências
+\bibliography{referencias}
+
+\end{document}
