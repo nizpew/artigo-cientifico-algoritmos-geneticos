@@ -32,24 +32,6 @@ Este trabalho analisa criticamente algoritmos genéticos (AG) sob perspectivas e
 
 ---
 
-## 📂 Estrutura do Repositório
-
-```
-
-artigo-cientifico-algoritmos-geneticos/
-│
-├── README.md                   # Este arquivo
-├── index.html                  # Exibe o PDF no GitHub Pages
-├── artigo_algoritmos_geneticos.pdf  # PDF do artigo
-├── latex/                      # Código-fonte LaTeX
-│   ├── artigo.tex
-│   ├── referencias.bib
-│   └── figuras/
-└── code/                       # Códigos e simulações relacionadas
-└── exemplos.ipynb
-
-```
-
 ---
 
 ## 📚 Referências
